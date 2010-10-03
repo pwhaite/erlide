@@ -2,12 +2,7 @@
 <html lang="en" class="no-js">
 <head>
   <meta charset="utf-8">
-
-  <!-- www.phpied.com/conditional-comments-block-downloads/ -->
   <!--[if IE]><![endif]-->
-
-  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
-       Remove this if you use the .htaccess -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
     <title>Erlide - the Erlang IDE. Powered by Eclipse.</title>
@@ -18,32 +13,23 @@
     <link rel="alternate" type="application/rss+xml" title="Erlide Project News"
         href="http://sourceforge.net/export/rss2_projnews.php?group_id=58889&amp;rss_fulltext=1"/>
 
-  <!--  Mobile Viewport Fix
-        j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
-  device-width : Occupy full width of the screen in its current orientation
-  initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
-  maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
-  -->
   <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
 
-  <!-- Place favicon.ico and apple-touch-icon.png in the root of your domain and delete these references -->
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-
   <!-- CSS : implied media="all" -->
   <link rel="stylesheet" href="css/style.css?v=1">
-
+  <link rel="stylesheet" type="text/css" href="css/andreas03.css"/>
+  <link rel="stylesheet" href="css/960.css">
+  
   <!-- For the less-enabled mobile browsers like Opera Mini -->
   <link rel="stylesheet" media="handheld" href="css/handheld.css?v=1">
-
  
   <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
   <script src="js/modernizr-1.5.min.js"></script>
 
 </head>
-
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 
 <!--[if lt IE 7 ]> <body class="ie6"> <![endif]-->
 <!--[if IE 7 ]>    <body class="ie7"> <![endif]-->
@@ -51,40 +37,42 @@
 <!--[if IE 9 ]>    <body class="ie9"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <body> <!--<![endif]-->
 
-        <div id="thetop">
+        <div id="thetop" class="container_12 hidden">
             <a id="top"/>
-            <p class="hide" style="margin-bottom: 0">Skip to: <a href="#sitemenu" accesskey="2">Site
+            <p style="margin-bottom: 0">Skip to: <a href="#sitemenu" accesskey="2">Site
                     menu</a> | <a href="#maincontent" accesskey="3">Main content</a></p>
         </div>
 
-        <div id="container">
-            <div id="main">
+		<div id="container" class="container_12">
+            <div id="content-wrapper" class="grid_8">
 
-                <div id="logo">
-                    <h1>
+                <div id="logo" class="grid_3 alpha">
                         <a href="index.html" accesskey="4">
-                            <span class="_A80103">erl</span><span class="_5C4A95">IDE</span>
-                        </a>
-                    </h1>
-                    <span id="tagline">Turbo charged Erlang development.<br/>Powered by
+                            <div class="logo"><span class="_A80103">erl</span><span class="_5C4A95">IDE</span></div>
+                            <span id="tagline">Turbocharged Erlang development.<br/>Powered by
                         Eclipse.</span>
+                        </a>
                 </div>
 
-                <div id="intro">
-                    <p style="margin-top: 3em;"><a href="http://www.erlang.org">Erlang</a> is an
+                <div id="intro" class="grid_5 omega">
+                    <p ><a href="http://www.erlang.org">Erlang</a> is an
                         open-sourced concurrency-oriented programming language, developed by <a
                             href="http://www.ericsson.com">Ericsson</a>. It has proven itself in
                         many industrial applications as a powerful tool. Now we are building a
                         development environment that will boost programmer efficiency even more.</p>
                 </div>
 
-      <div id='content'>
+				<div class="clear"></div>
+
+      <div id='content' class="grid_8 alpha omega">
         {{ content }}
-        <div class='clearfix'></div>
+
+
       </div>
+        <div class='clear'></div>
 	  </div>
 
-            <div id="sidebar">
+            <div id="sidebar" class="grid_3">
 
                 <ul class="sidemenu">
                     <li>
@@ -118,7 +106,7 @@
                             feeds</a>
                     </li>
                 </ul>
-               <p>
+                <p>
 				    <a href="http://sourceforge.net/projects/erlide">
 						<img src="http://sflogo.sourceforge.net/sflogo.php?group_id=58889&amp;type=16" width="150" height="40" alt="Get Erlang IDE @ Eclipse at SourceForge.net. Fast, secure and Free Open Source software downloads" />
 					</a>
@@ -143,7 +131,7 @@
 					<p><script type="text/javascript" src="http://www.ohloh.net/p/9612/widgets/project_thin_badge.js"></script></p>
                 <a class="hide" href="#top" accesskey="1">Top of page</a>
 
-                <h3>Links</h3>
+                <h3 class="headerstyle">Links</h3>
                 <ul class="sidelinks">
                     <li>
                         <a href="http://www.erlang.org">Open source Erlang</a>
@@ -158,18 +146,21 @@
                         <a href="http://www.trapexit.org">Trapexit</a>, an Erlang community</li>
                 </ul>
             </div>
-            <div class="clear">&nbsp;</div>
         </div>
 
-        <div id="footer">Last updated: 2010-12-27<br/> &copy; 2005-2010 Vlad Dumitrescu. Design by <a
+		<div class="clear"></div>
+        <div id="footer" class="container_12">Last updated: 2010-10-03<br/> &copy; 2005-2010 Vlad Dumitrescu. Design by <a
                 href="http://andreasviklund.com" class="credit">Andreas Viklund</a></div>
+		<div class="clear"></div>
+
 
   <!-- Javascript at the bottom for fast page loading -->
 
   <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<!--
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
   <script>!window.jQuery && document.write('<script src="js/jquery-1.4.2.min.js"><\/script>')</script>
-
+-->
 
   <script src="js/plugins.js?v=1"></script>
   <script src="js/script.js?v=1"></script>
@@ -178,11 +169,18 @@
     <script src="js/dd_belatedpng.js?v=1"></script>
   <![endif]-->
 
-
-  <!-- yui profiler and profileviewer - remove for production -->
-  <script src="js/profiling/yahoo-profiling.min.js?v=1"></script>
-  <script src="js/profiling/config.js?v=1"></script>
-  <!-- end profiling code -->
+	  <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet 
+       change the UA-XXXXX-X to be your site's ID -->
+  <script>
+   var _gaq = [['_setAccount', 'UA-2373857-1'], ['_trackPageview']];
+   (function(d, t) {
+    var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+    g.async = true;
+    g.src = '//www.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g, s);
+   })(document, 'script');
+  </script>
 
         <script type="text/javascript">
             var uservoiceJsHost = ("https:" == document.location.protocol)? "https://uservoice.com": "http://cdn.uservoice.com"
@@ -198,20 +196,5 @@
                 hover_color: '#06C',
                 lang: 'en' // 'en', 'de', 'nl', 'es', 'fr'
             })</script>
-
-  <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet 
-       change the UA-XXXXX-X to be your site's ID -->
-  <script>
-   var _gaq = [['_setAccount', 'UA-2373857-1'], ['_trackPageview']];
-   (function(d, t) {
-    var g = d.createElement(t),
-        s = d.getElementsByTagName(t)[0];
-    g.async = true;
-    g.src = '//www.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g, s);
-   })(document, 'script');
-  </script>
-  
-
     </body>
 </html>
