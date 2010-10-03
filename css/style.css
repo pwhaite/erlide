@@ -205,6 +205,7 @@ body
 {
 	margin: 0;
 	padding: 30px 0;
+	background: #047 url(../img/bodybg.png) repeat-x fixed;
 	color: #222;
 }
 #thetop
@@ -216,7 +217,7 @@ body
 	width: 720px;
 	margin: 0 auto;
 	padding: 20px 20px 0;
-	background: #FFF url(img/contbg.png) no-repeat;
+	background: #FFF url(../img/contbg.png) no-repeat;
 	color: #222;
 }
 a
@@ -253,7 +254,7 @@ p
 	text-align: center;
 	color: #555;
 	overflow: auto;
-	border-radius: 9px;
+	-moz-border-radius: 9px;
 }
 #logo H1
 {
@@ -298,7 +299,7 @@ code
 	display: block;
 	margin: 30px 0 10px;
 	padding: 5px 0 5px 8px;
-	background: #EEE url(img/gradient2.png) repeat-x;
+	background: #EEE url(../img/gradient2.png) repeat-x;
 	color: #222;
 	border-top: 1px solid #DDD;
 	border-right: 1px solid #BBB;
@@ -336,7 +337,7 @@ ul.sidelinks {
 	font-size: 1.1em;
 	font-weight: bold;
 	text-align: left;
-	background: #EEE url(img/gradient1.png) repeat-x;
+	background: #EEE url(../img/gradient1.png) repeat-x;
 	color: #26C;
 	border-top: 1px solid #DDD;
 	border-right: 1px solid #BBB;
@@ -345,7 +346,7 @@ ul.sidelinks {
 }
 .sidelink:hover, .menuheader
 {
-	background: #FFF url(img/gradient2.png) repeat-x;
+	background: #FFF url(../img/gradient2.png) repeat-x;
 	color: #222;
 	border-top: 1px solid #DDD;
 	border-right: 1px solid #888;
@@ -357,7 +358,7 @@ ul.sidelinks {
 {
 	margin: 0 auto 20px;
 	width: 760px;
-	background: #FFF url(img/footerbg.png) no-repeat bottom left;
+	background: #FFF url(../img/footerbg.png) no-repeat bottom left;
 	padding: 0 0 5px;
 	font-size: 0.9em;
 	color: #888;
