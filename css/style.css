@@ -200,75 +200,11 @@ button {  width: auto; overflow: visible; }
  /* Primary Styles
     Author: 
  */
-
-
-
-
-
-
-
-
-
-
-
-/* 
- * print styles
- * inlined to avoid required HTTP connection www.phpied.com/delay-loading-your-print-css/ 
- */
-@media print {
-  * { background: transparent !important; color: #444 !important; text-shadow: none; }
-
-  a, a:visited { color: #444 !important; text-decoration: underline; }
-
-  a:after { content: " (" attr(href) ")"; } 
-
-  abbr:after { content: " (" attr(title) ")"; }
-  
-  .ir a:after { content: ""; }  /* Don't show links for images */
-  
-  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-  
-  img { page-break-inside: avoid; }
-
-  @page { margin: 0.5cm; }
-
-  p, h2, h3 { orphans: 3; widows: 3; }
-
-  h2, h3{ page-break-after: avoid; }
-}
-
-
-
-/*
- * Media queries for responsive design
- */
-
-@media all and (orientation:portrait) { 
-  /* Style adjustments for portrait mode goes here */
-  
-}
-
-@media all and (orientation:landscape) { 
-  /* Style adjustments for landscape mode goes here */
-  
-}
-
-/* Grade-A Mobile Browsers (Opera Mobile, iPhone Safari, Android Chrome)  
-   Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
-@media screen and (max-device-width: 480px) {
-  
-  
-  /* Prevent iOS, WinMobile from adjusting font size */
-  html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } 
-}
-
 /*andreas03.css*/
-BODY
+body
 {
 	margin: 0;
 	padding: 30px 0;
-	font: 0.8em tahoma, verdana, sans-serif;
-	background: #047 url(img/bodybg.png) repeat-x fixed;
 	color: #222;
 }
 #thetop
@@ -283,21 +219,21 @@ BODY
 	background: #FFF url(img/contbg.png) no-repeat;
 	color: #222;
 }
-A
+a
 {
 	text-decoration: none;
 	background-color: inherit;
 	color: #26C;
 }
-A:hover
+a:hover
 {
 	text-decoration: underline;
 }
-A IMG
+a img
 {
 	border: 0;
 }
-P
+p
 {
 	margin: 0 0 15px;
 	line-height: 1.3em;
@@ -351,7 +287,7 @@ P
 	margin-right: 20px;
 	padding: 0;
 }
-CODE
+code
 {
 	font: 76% courier;
 	color: #336600;
@@ -500,3 +436,55 @@ span._5C4A95 {
 }
 /*Original open source design by Andreas Viklund - http://andreasviklund.com
 Released through OSWD.org*/
+
+
+/* 
+ * print styles
+ * inlined to avoid required HTTP connection www.phpied.com/delay-loading-your-print-css/ 
+ */
+@media print {
+  * { background: transparent !important; color: #444 !important; text-shadow: none; }
+
+  a, a:visited { color: #444 !important; text-decoration: underline; }
+
+  a:after { content: " (" attr(href) ")"; } 
+
+  abbr:after { content: " (" attr(title) ")"; }
+  
+  .ir a:after { content: ""; }  /* Don't show links for images */
+  
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  
+  img { page-break-inside: avoid; }
+
+  @page { margin: 0.5cm; }
+
+  p, h2, h3 { orphans: 3; widows: 3; }
+
+  h2, h3{ page-break-after: avoid; }
+}
+
+
+
+/*
+ * Media queries for responsive design
+ */
+
+@media all and (orientation:portrait) { 
+  /* Style adjustments for portrait mode goes here */
+  
+}
+
+@media all and (orientation:landscape) { 
+  /* Style adjustments for landscape mode goes here */
+  
+}
+
+/* Grade-A Mobile Browsers (Opera Mobile, iPhone Safari, Android Chrome)  
+   Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
+@media screen and (max-device-width: 480px) {
+  
+  
+  /* Prevent iOS, WinMobile from adjusting font size */
+  html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } 
+}
