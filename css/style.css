@@ -253,6 +253,7 @@ p
 	text-align: center;
 	color: #555;
 	overflow: auto;
+	border-radius: 9px;
 }
 #logo H1
 {
