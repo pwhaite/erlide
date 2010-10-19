@@ -20,8 +20,8 @@
 
   <!-- CSS : implied media="all" -->
   <link rel="stylesheet" href="css/style.css?v=1">
-  <link rel="stylesheet" type="text/css" href="css/andreas03.css"/>
-  <link rel="stylesheet" href="css/960.css">
+  <link rel="stylesheet" href="css/style_fresh.css">
+  <link rel="stylesheet" href="css/960_.css">
   
   <!-- For the less-enabled mobile browsers like Opera Mini -->
   <link rel="stylesheet" media="handheld" href="css/handheld.css?v=1">
@@ -35,7 +35,7 @@
 <!--[if IE 7 ]>    <body class="ie7"> <![endif]-->
 <!--[if IE 8 ]>    <body class="ie8"> <![endif]-->
 <!--[if IE 9 ]>    <body class="ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <body> <!--<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <body id="top"> <!--<![endif]-->
 
     <div id="thetop" class="container_12 hidden">
         <a id="top"/>
@@ -43,92 +43,167 @@
                 menu</a> | <a href="#maincontent" accesskey="3">Main content</a></p>
     </div>
 
-	<div id="container" class="container_12">
-        <div id="content-wrapper" class="grid_8">
-            <div id="logo" class="grid_3 alpha">
-                <a href="index.html" accesskey="4">
-                    <div class="logo"><span class="_A80103">erl</span><span class="_5C4A95">IDE</span></div>
-                    <span id="tagline">Turbocharged Erlang development.<br/>Powered by
-                        Eclipse.</span>
-                </a>
-            </div>
+<div id="header-wrapper">
+	<div id="header-wrapper-2">
+		<div class="center-wrapper">
 
-            <div id="intro" class="grid_5 omega">
-                <p ><a href="http://www.erlang.org">Erlang</a> is an
+			<div id="header">
+
+				<div id="logo">
+					<h1 id="site-title"><a href="#"><span class="_A80103">erl</span><span class="_5C4A95">ide</span></a></h1>
+					<h2 id="site-slogan">Turbocharged Erlang development.<br/>Powered by Eclipse.</h2>
+				</div>
+
+				<div id="help-wrapper">
+					<div id="help">
+
+						<a href="#">Contact us</a> <span class="text-separator">|</span> <a href="#">F.A.Q</a> <span class="text-separator">|</span> <a href="#">Sitemap</a>
+
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<div id="navigation-wrapper">
+	<div id="navigation-wrapper-2">
+		<div class="center-wrapper">
+	
+			<div id="navigation">
+
+				<ul class="tabbed">
+					<li class="current_page_item"><a href="index.html">Overview</a></li>
+					<li><a href="product_details.html">Features</a></li>
+					<li><a href="http://vladdu.blogspot.com">Blog</a></li>
+                <li>
+                    <a href="#installation">Installation</a>
+                </li>
+                <li>
+                    <a href="erlide.html">Documentation</a>
+                </li>
+                <li>
+                    <a href="#faq">FAQ</a>
+                </li>
+                 <li>
+                    <a href="http://sourceforge.net/projects/erlide">Project
+                        site</a>
+                </li>
+                <li>
+                    <a href="http://sourceforge.net/project/showfiles.php?group_id=58889">Downloads</a>
+                </li>
+                <li>
+                    <a href="http://sourceforge.net/export/rss2_project.php?group_id=58889">RSS
+                        feeds</a>
+                </li>
+ 				</ul>
+
+				<div class="clearer">&nbsp;</div>
+
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+
+<div id="content-wrapper">
+	<div class="center-wrapper">
+ 
+		<div class="content">
+
+			<div id="featured-wrapper">
+				<div id="featured">
+
+					<div class="left" style="width: 330px">
+					
+						<h2>erl<span>ide</span></h2>
+
+				<p class="large">
+                	<a href="http://www.erlang.org">Erlang</a> is an
                     open-sourced concurrency-oriented programming language, developed by <a
                     href="http://www.ericsson.com">Ericsson</a>. It has proven itself in
                     many industrial applications as a powerful tool. Now we are building a
                     development environment that will boost programmer efficiency even more.</p>
-            </div>
 
-			<div class="clear"></div>
+						<p><img src="sample-videoplayer.jpg" width="321" height="197" alt="" /></p>
 
-			<div id='content' class="grid_8 alpha omega">
-				{{ content }}
-		    </div>
-        	<div class='clear'></div>
-		</div>
+						<p class="large text-center"><a href="#">Try it out</a> <span class="text-separator">|</span> <a href="#">Buy now</a> <span class="text-separator">|</span> <a href="#">Information</a></p>
 
-        <div id="sidebar" class="grid_3">
-            <ul class="sidemenu">
-                <li>
-                    <a class="sidelink" href="index.html">Overview</a>
-                </li>
-                <li>
-                    <a class="sidelink" href="#installation">Installation</a>
-                </li>
-                <li>
-                    <a class="sidelink" href="erlide.html">Documentation</a>
-                </li>
-                <li>
-                    <a class="sidelink" href="#faq">FAQ</a>
-                </li>
-                <li>
-                    <a class="sidelink" href="http://vladdu.blogspot.com"
-                        >Blog</a>
-                </li>
-                <li>
-                    <a class="sidelink" href="http://sourceforge.net/projects/erlide">Project
-                        site</a>
-                </li>
-                <li>
-                    <a class="sidelink"
-                        href="http://sourceforge.net/project/showfiles.php?group_id=58889"
-                        >Downloads</a>
-                </li>
-                <li>
-                    <a class="sidelink"
-                        href="http://sourceforge.net/export/rss2_project.php?group_id=58889">RSS
-                        feeds</a>
-                </li>
-            </ul>
-            <p>
-			    <a href="http://sourceforge.net/projects/erlide">
-					<img src="http://sflogo.sourceforge.net/sflogo.php?group_id=58889&amp;type=16" width="150" height="40" alt="Get Erlang IDE @ Eclipse at SourceForge.net. Fast, secure and Free Open Source software downloads" />
-				</a>
-			</p>
-            <p>
-                <a href="http://www.erlang.org">
-                    <img src="img/erlang110.gif" width="110" height="96" alt="Erlang logo"/>
-                </a>
-            </p>
-            <p>
-                <a href="http://www.eclipse.org">
-                    <img src="img/rea_eclipse_pos_logo_fc_sm.jpg" width="128" height="75"
-                            alt="Eclipse logo"/>
-                </a>
-            </p>
-            <p>
-                <a href="http://www.instantiations.com">
-                    <img src="img/builtwith-instantiations1.png" width="133" height="43"
-                            alt="Built with Instantiations"/>
-                </a>
-            </p>
-			<p><script type="text/javascript" src="http://www.ohloh.net/p/9612/widgets/project_thin_badge.js"></script></p>
-            <a class="hide" href="#top" accesskey="1">Top of page</a>
+					</div>
 
-            <h3 class="headerstyle">Links</h3>
-            <ul class="sidelinks">
+					<div class="right">
+						<img src="sample-product.jpg" width="252" height="332" alt="" />
+					</div>
+
+					<div class="clearer">&nbsp;</div>
+
+				</div>
+			</div>
+
+			<div id="main">
+
+				<div class="separator-vertical">
+
+					<div class="col2 left">
+
+						<h2 class="left">Featured Products</h2>
+						<div class="right more large"><a href="#">All Products &#187;</a></div>
+						
+						<div class="clearer">&nbsp;</div>
+
+						<div class="content-separator"></div>
+
+						<img src="sample-thumbnail.jpg" width="64" height="64" alt="" class="left bordered" />
+
+						<h3><a href="#">Suspendisse</a></h3>
+						
+						<p>In nunc et nibh rutrum volutpat. Sed tempus interdum ligula adipiscing blandit. Aliquam tempor, elit ac rhoncus lacinia, mauris metus suscipit sem.</p>
+
+						<div class="clearer">&nbsp;</div>
+
+						<div class="content-separator"></div>
+						
+						<img src="sample-thumbnail.jpg" width="64" height="64" alt="" class="left bordered" />
+
+						<h3><a href="#">Eu semper nunc</a></h3>
+						
+						<p>Libero posuere purus. Morbi imperdiet, libero sed lacinia aliquam, metus metus iaculis lectus, eu dictum massa odio at sapien.</p>
+
+						<div class="clearer">&nbsp;</div>
+
+						<div class="content-separator"></div>
+
+						<img src="sample-thumbnail.jpg" width="64" height="64" alt="" class="left bordered" />
+
+						<h3><a href="#">Interdum Ligula</a></h3>
+						
+						<p>Sed tempus interdum ligula adipiscing blandit. Aliquam tempor, rhoncus lacinia mauris metus suscipit sem.</p>
+
+						<div class="clearer">&nbsp;</div>
+
+					</div>
+
+					<div class="col2 right">
+
+						<h2 class="left">News</h2>
+						<div class="right more large"><a href="#">Browse Archives &#187;</a></div>
+
+						<div class="clearer">&nbsp;</div>
+
+						<ul class="nice-list">
+							<li><span>2009-06-21 |</span> <a href="#">Praesent vulputate sodales</a></li>
+							<li><span>2009-06-21 |</span> <a href="#">Eget pretium ante egestas</a></li>
+							<li><span>2009-06-21 |</span> <a href="#">Aliquam ut augue lectus</a></li>
+							<li><span>2009-06-21 |</span> <a href="#">Donec tempor porttitor</a></li>
+							<li><span>2009-06-21 |</span> <a href="#">Libero posuere purus</a></li>
+						</ul>
+												
+            <h2 class="">Links</h2>
+            <ul class="nice-list">
                 <li>
                     <a href="http://www.erlang.org">Open source Erlang</a>
                 </li>
@@ -141,14 +216,87 @@
                 <li>
                     <a href="http://www.trapexit.org">Trapexit</a>, an Erlang community
                 </li>
+ 			    <li><a href="http://sourceforge.net/projects/erlide">
+					<img src="http://sflogo.sourceforge.net/sflogo.php?group_id=58889&amp;type=16" width="150" height="40" alt="Get Erlang IDE @ Eclipse at SourceForge.net. Fast, secure and Free Open Source software downloads" />
+				</a>
+                <a href="http://www.erlang.org">
+                    <img src="img/erlang110.gif" width="110" height="96" alt="Erlang logo"/>
+                </a><a href="http://www.eclipse.org">
+                    <img src="img/rea_eclipse_pos_logo_fc_sm.jpg" width="128" height="75"
+                            alt="Eclipse logo"/>
+		                </a></li>
+                <li>
+			<script type="text/javascript" src="http://www.ohloh.net/p/9612/widgets/project_thin_badge.js"></script>
+			</li>
             </ul>
-        </div>
-    </div>
-	<div class="clear"></div>
-    <div id="footer" class="container_12">Last updated: 2010-10-03<br/> &copy; 2005-2010 Vlad Dumitrescu. Design by <a
-                href="http://andreasviklund.com" class="credit">Andreas Viklund</a></div>
-	<div class="clear"></div>
+         
+									<h2 class="left">Testimonials</h2>
+						<div class="right more large"><a href="#">View More &#187;</a></div>
 
+						<div class="clearer">&nbsp;</div>
+
+						<blockquote>
+							<p><span>&quot;</span> Praesent vulputate sodales ligula, eget pretium ante egestas ut. Aliquam ut augue lectus, sit amet sollicitudin lacus. <span>&quot;</span></p>
+							<cite>Viktor Persson, CEO at Arcsin</cite>
+						</blockquote>
+
+						<blockquote>
+							<p><span>&quot;</span> Donec tempor porttitor tellus vitae eleifend.<span>&quot;</span></p>
+							<cite>Some Author, Web Developer at Company</cite>
+						</blockquote>							
+
+					</div>
+
+					<div class="clearer">&nbsp;</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+<div id="footer-wrapper">
+
+	<div class="center-wrapper">
+
+		<div id="footer">
+
+			<div class="left">
+				<a href="index.html">Home</a> <span class="text-separator">|</span> <a href="product_details.html">Product Details</a> <span class="text-separator">|</span> <a href="blog_post.html">Blog Post</a> <span class="text-separator">|</span> <a href="archives.html">Archives</a> <span class="text-separator">|</span> <a href="style_demo.html">Style Demo</a> <span class="text-separator">|</span> <a href="empty_page.html">Empty Page</a>
+			</div>
+
+			<div class="right">
+				<a href="#">Top ^</a>
+			</div>
+			
+			<div class="clearer">&nbsp;</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+<div id="bottom">
+
+	<div class="center-wrapper">
+
+		<div class="left">
+			&copy; 2009 Website.com - Your Website Slogan <span class="text-separator">|</span> <a href="#">Privacy Policy</a> <span class="text-separator">|</span> <a href="#">Terms of Use</a> 
+		</div>
+
+		<div class="right">
+			<a href="http://templates.arcsin.se/">Website template</a> by <a href="http://arcsin.se/">Arcsin</a> 
+		</div>
+		
+		<div class="clearer">&nbsp;</div>
+
+	</div>
+
+</div>
 
   <!-- Javascript at the bottom for fast page loading -->
 
@@ -167,7 +315,7 @@
 
 	  <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet 
        change the UA-XXXXX-X to be your site's ID -->
-  <script>
+  <!--script>
    var _gaq = [['_setAccount', 'UA-2373857-1'], ['_trackPageview']];
    (function(d, t) {
     var g = d.createElement(t),
@@ -191,6 +339,6 @@
                 text_color: 'white', // 'white', 'black'
                 hover_color: '#06C',
                 lang: 'en' // 'en', 'de', 'nl', 'es', 'fr'
-            })</script>
+            })</script-->
     </body>
 </html>
