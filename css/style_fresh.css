@@ -422,6 +422,7 @@ div.comment-list {
 	color: #666;
 	font-size: 1.2em;
 	padding: 10px 28px 0 32px;
+	text-align: center;
 }
 #help a {
 	color: #999;
@@ -434,8 +435,9 @@ div.comment-list {
 	padding: 0 7px;
 }
 
-#logo {color: #FFF;}
-#site-title a {text-decoration: none;}
+.logo {font-family: Georgia,serif;}
+#logo {color: #FFF; }
+#site-title a {text-decoration: none; }
 #site-title, #site-title a {color: #FFF;}
 #site-title span, #site-title a span {color: #DDD;}
 #site-slogan {
@@ -573,7 +575,8 @@ ul.tabbed a {text-decoration: none;}
 #featured {padding: 42px 124px 12px 48px;}
 
 #featured h2 {
-	font: normal 3em sans-serif;
+	font-weight: normal;
+	font-size: 3em ;
 	margin: 0;
 }
 #featured h2 span {color: #43B16C;}
